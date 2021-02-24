@@ -4,10 +4,10 @@ import image from "./mne.jpg"
 
 function AboutMe() {
     return (
-        <div className="about-wrapper">
+        <div className="about-wrapper" id="about-me">
             <div className="description" >
                 <div className="card-bod">
-                    <div className="card1" id="about-me">
+                    <div className="card1">
                         <img src={image} alt="my pictures" />
                     </div>
                     <Card className="card2" style={{ width: '30rem', height: '18rem' }}>

@@ -114,8 +114,10 @@ text-align: center;
 /*************************ABOUT ME*******************************/
 .about-wrapper{
   position: relative;
-  height: 45vh;
+  height: 63vh;
   width: 98vw;
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
 }
 
 .description{
@@ -184,7 +186,7 @@ text-align: center;
 
 .myskill-card{
   position: relative;
-  padding-top: 2rem;
+  padding-top: 5rem;
   height: 55vh;
   width: 98.7vw;
   background-color: rgb(236, 235, 235);
@@ -199,7 +201,7 @@ text-align: center;
 .sub-card{
   display: flex;
   justify-content: space-between;
-  padding-bottom: 2.1rem;
+  padding-bottom: 3.5rem;
 }
 
 .positions{
@@ -262,7 +264,7 @@ text-align: center;
   position: relative;
   height: 93vh;
   width: 98.7vw;
-  background-color: #060708fa;
+  background-color: rgba(2, 1, 1, 0.89);
 }
 
 .form-line{
@@ -301,7 +303,68 @@ text-align: center;
   margin-right: auto !important;
   margin-left: auto !important;
 }
+/*************************FOOTER*******************************/
 
+.footer-com{
+position: relative;
+width: 98.7vw;
+height: 9rem;
+color: #fff;
+background-color: #060708fa;
+}
+
+.conten{
+padding-top: 1.6rem;
+}
+
+.conten p{
+ font-size: 1.0rem;
+}
+
+.holder{
+  position: relative;
+  display: block;
+  width: 80vw;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.content-position{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.associates{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 10.2rem;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.associates a{
+  font-size: 1.1rem; 
+  text-decoration: none;
+  color: #fff;
+}
+
+.copyright{
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.logos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 10rem;
+  padding-bottom: 1rem;
+  font-size: 2.3rem;
+}
 
 /*************************RESPONSIVENESS 768*******************************/
 
@@ -512,7 +575,7 @@ text-align: center;
  /*********************ABOUT ME***************************/
  .about-wrapper{
   width: 99.5vw;
-  height: 45rem;
+  height: 50rem;
 }
 
 

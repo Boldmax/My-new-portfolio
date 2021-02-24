@@ -9,6 +9,7 @@ import AboutMe from "./aboutMe";
 import MySkills from "./MySkills";
 import Portfolio from "./Portfolio";
 import ContactForm from "./ContactForm";
+import Footer from "./Footer";
 
 
 function App() {
@@ -39,7 +40,8 @@ function App() {
       <AboutMe />
       <MySkills />
       <Portfolio />     
-      <ContactForm />   
+      <ContactForm />  
+      <Footer/> 
     </>
   );
 }
