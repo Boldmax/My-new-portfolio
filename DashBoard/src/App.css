@@ -6,6 +6,9 @@
   --primary-black: rgba(10, 10, 10, 0.829);
 }
 
+/* html{
+  scroll-behavior: smooth;
+} */
 .logo{
   width: 8.25rem;
 }
@@ -24,6 +27,9 @@ Nav ul li a{
   text-transform: uppercase !important;
 }
 
+.navbar-toggler-icon{
+  color: #fff !important;
+}
 .navbar-nav > li > a{
   margin-right: 3.95rem;
   margin-left: 3.95rem;
@@ -498,9 +504,13 @@ padding-top: 1.6rem;
   position: relative;
   height: 60vh;
   width: 99.5vw;
-  background-color: #060708fa;
+  background-color: rgba(2, 1, 1, 0.89);
 }
 
+/*********************FOOTER***************************/
+.footer-com{
+  width: 99.5vw;
+}
 }
 
 /*************************RESPONSIVENESS 540*******************************/
@@ -529,6 +539,52 @@ padding-top: 1.6rem;
     height: 78vh;
     width: 99.5vw;
   }
+
+   /*********************Footer***************************/
+   .footer-com{
+    width: 99.5vw;
+    height: 14rem;
+  }
+  
+  .conten p{
+    font-size: 1rem;
+   }
+  
+   .holder{
+    width: 95vw;
+  }
+  
+  .associates a{
+    font-size: 1rem; 
+    padding-bottom: 1rem;
+  }
+  
+  .associates{
+    width: 10.2rem;
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-left: 1.3rem;
+  }
+  
+  .logos{
+    flex-wrap: nowrap;
+    width: 10.2rem;
+    padding-bottom: 1rem;
+    font-size: 2.2rem;
+  }
+  
+  .copyright{
+    padding-top: 1rem;
+  }
+  
+  .copyright p{
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+
 
 }
 
@@ -565,6 +621,15 @@ padding-top: 1.6rem;
 @media only screen and (max-width:375px){
   .footer{
     height: 81vh;
+  }
+
+  .associates a{
+    padding-bottom: 0.7rem;
+  }
+
+  .logos{
+    font-size: 2.1rem;
+    width: 8rem;
   }
 }
 

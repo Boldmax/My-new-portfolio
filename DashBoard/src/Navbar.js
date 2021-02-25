@@ -1,6 +1,8 @@
 import React from "react";
-//import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav } from "react-bootstrap";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "bootstrap/js/dist/collapse.js"
 
 
 export default function Navbar() {
@@ -9,9 +11,9 @@ export default function Navbar() {
       <div className="container-fluid">
         <a className="navbar-brand" href="#home">BO<span className="logo-color">LD</span>MAX</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon text-light"></span>
+          <span className="bi bi-justify text-light" style={{fontSize:"2.9rem"}}></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
           <ul className="navbar-nav m-auto">
             <li className="nav-item active">
               <a className="nav-link" aria-current="page" href="#home">HOME</a>
