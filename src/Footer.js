@@ -12,11 +12,11 @@ export default function Footer() {
 
                     </div>
                     <div className="associates">
-                        <a href="#">Home</a>
-                        <a href="#">About Me</a>
-                        <a href="#">My Skill</a>
-                        <a href="#">Portfolio</a>
-                        <a href="#">Contact</a>
+                        <a href="#home">Home</a>
+                        <a href="#about">About Me</a>
+                        <a href="#mySkill">My Skills</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#contact">Contact</a>
                     </div>
                     <div className="copyright">
                         <div className="logos">
