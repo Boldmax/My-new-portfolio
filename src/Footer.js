@@ -20,9 +20,9 @@ export default function Footer() {
                     </div>
                     <div className="copyright">
                         <div className="logos">
-                            <a href="https://twitter.com/Bold_max1?s=09" className="bi bi-twitter"></a>
-                            <a href="https://www.linkedin.com/mwlite/in/adewumi-olabode-olalekan-091a9171" className="bi bi-linkedin"></a>
-                            <a href="https://github.com/Boldmax" className="bi bi-github"></a>
+                            <a href="https://twitter.com/Bold_max1?s=09" className="bi bi-twitter">Twitter</a>
+                            <a href="https://www.linkedin.com/mwlite/in/adewumi-olabode-olalekan-091a9171" className="bi bi-linkedin">LinkedIn</a>
+                            <a href="https://github.com/Boldmax" className="bi bi-github">GitHub</a>
                         </div>
                         <p>Copyright © 2021 boldmax</p>
                     </div>
