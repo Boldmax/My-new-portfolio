@@ -14,17 +14,17 @@ export default function Footer() {
                     <div className="associates">
                         <a href="#home">Home</a>
                         <a href="#about">About Me</a>
-                        <a href="#mySkill">My Skills</a>
+                        <a href="#skill">My Skills</a>
                         <a href="#portfolio">Portfolio</a>
                         <a href="#contact">Contact</a>
                     </div>
                     <div className="copyright">
                         <div className="logos">
-                            <a href="#" className="bi bi-twitter"></a>
-                            <a href="#" className="bi bi-linkedin"></a>
-                            <a href="#" className="bi bi-github"></a>
+                            <a href="https://twitter.com/Bold_max1?s=09" className="bi bi-twitter"></a>
+                            <a href="https://www.linkedin.com/mwlite/in/adewumi-olabode-olalekan-091a9171" className="bi bi-linkedin"></a>
+                            <a href="https://github.com/Boldmax" className="bi bi-github"></a>
                         </div>
-                        <p>Copyright 2021 boldmax</p>
+                        <p>Copyright © 2021 boldmax</p>
                     </div>
                 </div>
             </div>
