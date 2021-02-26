@@ -44,7 +44,7 @@ Nav ul li a{
   color: var(--primary-white) !important;
   font-weight: bold;
   letter-spacing: 0.5rem;
-  font-size: 17rem;
+  font-size: 1.2rem !important;
   margin-left: 5rem !important;
 }
 
