@@ -12,7 +12,7 @@
 
 /*************************NAVBAR*******************************/
 .logo{
-  width: 8.25rem;
+  width: 2.25rem;
 }
 
 .nav{
@@ -39,7 +39,7 @@ Nav ul li a{
 }
 
 .navbar-brand{
-  max-width: 17.25rem !important;
+  max-width: 4.25rem;
   padding: 0.9rem !important;
   color: var(--primary-white) !important;
   font-weight: bold;
@@ -315,7 +315,7 @@ text-align: center;
 .footer-com{
 position: relative;
 width: 98.7vw;
-height: 9rem;
+height: 10rem;
 color: #fff;
 background-color: #060708fa;
 }
@@ -363,14 +363,23 @@ padding-top: 1.6rem;
   flex-direction: column;
 }
 
+.copyright p{
+ text-align: center;
+}
+
 .logos{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  width: 10rem;
+  width: 12rem;
   padding-bottom: 1rem;
+  padding-left: 0rem;
   font-size: 2.3rem;
+}
+
+ul{
+  list-style: none;
 }
 
 /*************************RESPONSIVENESS 768*******************************/
@@ -665,4 +674,42 @@ padding-top: 1.6rem;
   padding-left: 2.2rem !important;
 }
 
+.logos{
+  font-size: 2.1rem;
+  width: 6rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.footer-com{
+  width: 100vw;
+  height: 18rem;
+  margin-right: 0;
+}
+
+}
+
+@media only screen and (max-width:280px){
+  .conten{
+    width: 9rem;
+    }
+
+    .conten p{
+      font-size: 0.8rem;
+      }
+
+      .associates a{
+        font-size: 1rem; 
+      }
+
+      .copyright p{
+        font-size: 1rem;
+      }
+
+      .logos{
+        font-size: 1.8rem;
+        width: 6rem;
+      }
 }
