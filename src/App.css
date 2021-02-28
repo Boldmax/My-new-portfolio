@@ -646,7 +646,7 @@ ul{
 /*************************RESPONSIVENESS 360*******************************/
 
 /*************************RESPONSIVENESS 320*******************************/
-@media only screen and (max-width:323px){
+@media only screen and (max-width:339px){
  /*********************ABOUT ME***************************/
  .about-wrapper{
   width: 99.5vw;
