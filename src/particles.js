@@ -1,4 +1,5 @@
-
+const ref = React.useRef();
+ref={ref}
 
 <form className="form-display" onSubmit={handleSubmit}>             
 <input
