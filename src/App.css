@@ -265,18 +265,18 @@ text-align: center;
 }
 
 /*************************CONTACT FORM*******************************/
-.footer{
+.c-form{
   position: relative;
-  height: 93vh;
+  height: 98vh;
   width: 98.7vw;
   background-color: rgba(2, 1, 1, 0.89);
 }
 
 .form-line{
-  margin-top: 1.5rem !important;
+  margin-top: 1rem ;
   background-color: #060708fa !important;
   border: none !important;
-  border-bottom: 0.1rem solid grey !important;
+  border-radius: 5px;
 }
 
 .form h1{
@@ -288,17 +288,40 @@ text-align: center;
 
 .submit-btn{
   display: block;
-  margin-top: 2rem !important;
-  margin-left: auto !important;
+  margin-top: 2rem ;
+  margin-left: auto ;
   margin-right: auto;
-  width: 9rem !important;
-  font-weight: bold !important;
+  width: 9rem ;
+  height: 3rem;
+  font-weight: bold;
+  border: none;
+  background-color: var(--primary-blue);
+  border-radius: 5px;
+  padding: 10px 0;
+}
+
+input{
+  width: 25rem;
+  background-color: #060708fa;
+  color: #fff;
+  height: 2rem;
+  font-size: 1.5rem;
+  border: none;
+  border-bottom: 0.2rem solid grey;
+  border-radius: 5px;
+}
+
+textarea{
+  resize: none;
+  height: 4rem;
+  color: #fff;
+  border-bottom: 0.3rem solid grey;
 }
 
 .form-display{
     width: 25rem;
     display: grid;
-    padding-top: 4rem ;
+    padding-top: 2rem ;
 }
 
 .form-body{
@@ -382,7 +405,7 @@ ul{
 
 .error-message{
   color: red !important;
-  font-size: 00.8rem !important;
+  font-size: 0.8rem !important;
 }
 
 /*************************RESPONSIVENESS 768*******************************/
@@ -513,7 +536,7 @@ ul{
 }
 
 /*********************FORM FIELD***************************/
-.footer{
+.c-form{
   position: relative;
   height: 60vh;
   width: 99.5vw;
@@ -548,7 +571,7 @@ ul{
     width: 99.5vw;
    }
 
-  .footer{
+  .c-form{
     height: 78vh;
     width: 99.5vw;
   }
@@ -573,19 +596,19 @@ ul{
   }
   
   .associates{
-    width: 10.2rem;
-    padding-top: 1.5rem;
+    width: 10.2rem !important;
+    padding-top: 1.5rem !important;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    padding-left: 1.3rem;
+    padding-left: 1.3rem !important;
   }
   
   .logos{
-    flex-wrap: nowrap;
-    width: 10.2rem;
-    padding-bottom: 1rem;
-    font-size: 2.2rem;
+    flex-wrap: nowrap !important;
+    width: 10.2rem !important;
+    padding-bottom: 1rem !important;
+    font-size: 2.2rem !important;
   }
   
   .copyright{
@@ -628,9 +651,14 @@ ul{
 
 }
 
+/*************************RESPONSIVENESS 411*******************************/
+@media only screen and (max-width:411px){
+
+}
+
 /*************************RESPONSIVENESS 393*******************************/
 @media only screen and (max-width:393px){
-  .footer{
+  .c-form{
     height: 87vh;
   }
 
@@ -642,12 +670,19 @@ ul{
     font-size: 2.1rem;
     width: 8rem;
   }
+
+  .form-line{
+    margin-top: 1.5rem !important;
+    background-color: #060708fa !important;
+    border: none !important;
+    border-bottom: 0.1rem solid grey !important;
+  }
 }
 
 
 /*************************RESPONSIVENESS 375*******************************/
 @media only screen and (max-width:375px){
-  .footer{
+  .c-form{
     height: 93vh;
   }
 
@@ -664,7 +699,7 @@ ul{
 /*************************RESPONSIVENESS 360*******************************/
 
 /*************************RESPONSIVENESS 320*******************************/
-@media only screen and (max-width:339px){
+@media only screen and (max-width:320px){
  /*********************ABOUT ME***************************/
  .about-wrapper{
   width: 99.5vw;
@@ -682,8 +717,8 @@ ul{
   width: 99.9vw;
  }
 
-.footer{
-  height: 98vh;
+.c-form{
+  height: 47rem;
   width: 99.9vw;
 }
 
@@ -699,12 +734,24 @@ ul{
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
+  text-align: center;
 }
 
 .footer-com{
   width: 100vw;
   height: 18rem;
   margin-right: 0;
+}
+
+.form-display{
+  width: 20rem;
+}
+
+.form-line input{
+  width: 20rem;
+}
+.form-body{
+  width: 20rem;
 }
 
 }
@@ -719,15 +766,27 @@ ul{
       }
 
       .associates a{
-        font-size: 1rem; 
+        font-size: 0.8rem; 
       }
 
       .copyright p{
-        font-size: 1rem;
+        font-size: 0.8rem;
+        text-align: start;
       }
 
       .logos{
         font-size: 1.8rem;
         width: 6rem;
+      }
+
+      .form-display{
+        width: 18rem;
+      }
+
+      .form-line input{
+        width: 18rem;
+      }
+      .form-body{
+        width: 18rem;
       }
 }

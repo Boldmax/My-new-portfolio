@@ -1,7 +1,8 @@
 import React from 'react';
-import { Form, Row, Button } from "react-bootstrap";
+//import { Form, Row, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 //import Validate from "./validateInfo";
+import content from "./useForm";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
@@ -14,45 +15,39 @@ const schema = yup.object().shape({
 })
 
 export default function ContactForm() {
-const { register, errors, handleSubmit } = useForm({
-    resolver: yupResolver(schema),
-});
-const onSubmit = (data) => console.log(data);
-console.log(errors)
+    const { register, errors, handleSubmit } = useForm({
+        resolver: yupResolver(schema),
+    });
+    const onSubmit = (data) => console.log(data);
+    console.log(errors)
     return (
-        <div className="footer" id="contact">
+        <div className="c-form" id="contact">
             <div className="form">
                 <h1>CONTACT ME</h1>
                 <div className="form-body">
-                <Form onSubmit= {handleSubmit(onSubmit)}>
-<Form.Row style={{ width: "25rem", display: "grid", paddingTop: "4rem" }} className="m-auto" >
-    <Row >
-        <Form.Control name= "Name" ref={register}  className="form-line text-light" placeholder="Name" />
-        <Form.Text className="error-message">{errors.Name?.message}</Form.Text> 
-    </Row>
-    
-    <Row>
-        <Form.Control name= "email" ref={register}  className="form-line text-light" placeholder="Email"  />
-        <Form.Text className="error-message">{errors.email?.message}</Form.Text>
-    </Row>
-    <Row>
-        <Form.Control name= "PhoneNo" ref={register}  className="form-line text-light" placeholder="Phone No."  />
-        <Form.Text className="error-message">{errors.PhoneNo?.message}</Form.Text>
-    </Row>
-    <Row>
-        <Form.Control name= "subject" ref={register}  className="form-line text-light" placeholder="Subject"  />
-        <Form.Text className="error-message">{errors.subject?.message}</Form.Text>
-    </Row>
-    <Row>
-        <Form.Control style={{ height: "5rem" }} name= "messages" ref={register}  className="form-line text-light" placeholder="Messages" />
-        <Form.Text className="error-message">{errors.message?.message}</Form.Text>
-    </Row>
-    <Button className="submit-btn" variant="primary" type="submit">CONTACT ME</Button>
-</Form.Row>
+                    <form className="form-display" onSubmit= {handleSubmit(onSubmit)}>
+                        {content.inputs.map((input, key) => {
+                            return (
+                               <div  key={key}>
+                                    <p className="form-line">
+                                <input
+                                    type="text"
+                                    name={input.name}                                   
+                                    placeholder={input.placeholder}
+                                    ref={register}
+                                />
+                                </p>
+                                <p className="error-message">{errors.[input.name]?.message}</p>
+                                </div>
+                            )
+                        })}
+                        <textarea  ref={register} className="form-line"></textarea>
+                        <p className="error-message">{errors.message?.message}</p>
+                         <input className="submit-btn" type="submit" value="Submit" />
+                         
 
-</Form>
-
-            </div>
+                    </form>
+                </div>
             </div>
         </div>
     )

@@ -7,7 +7,6 @@ export default function Footer() {
             <div className="holder">
                 <div className="content-position">
                     <div className="conten">
-                        <p>maxbold0007@gmail.com</p>
                         <p>+2348068191078</p>
 
                     </div>
@@ -24,7 +23,7 @@ export default function Footer() {
                            <li><a href="https://www.linkedin.com/mwlite/in/adewumi-olabode-olalekan-091a9171"><i className="bi bi-linkedin"></i></a></li>
                            <li><a href="https://github.com/Boldmax"><i className="bi bi-github"></i></a></li>
                         </ul>
-                        <p>Copyright&copy; 2021 boldmax</p>
+                        <p>Copyright&copy; 2021</p>
                     </div>
                 </div>
             </div>
