@@ -677,6 +677,17 @@ ul{
     border: none !important;
     border-bottom: 0.1rem solid grey !important;
   }
+
+  .form-display{
+    width: 20rem;
+  }
+
+  .form-line input{
+    width: 20rem;
+  }
+  .form-body{
+    width: 20rem;
+  }
 }
 
 
