@@ -662,7 +662,7 @@ ul{
 /*************************RESPONSIVENESS 393*******************************/
 @media only screen and (max-width:394px){
   .c-form{
-    height: 58rem;
+    height: 55rem;
   }
 
   .footer-com{
