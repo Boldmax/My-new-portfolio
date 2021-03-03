@@ -41,7 +41,7 @@ export default function ContactForm() {
                                 </div>
                             )
                         })}
-                        <textarea  ref={register} className="form-line"></textarea>
+                        <textarea name="message"  ref={register} className="form-line"></textarea>
                         <p className="error-message">{errors.message?.message}</p>
                          <input className="submit-btn" type="submit" value="Submit" />
                          

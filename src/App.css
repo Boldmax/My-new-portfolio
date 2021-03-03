@@ -654,12 +654,15 @@ ul{
 /*************************RESPONSIVENESS 411*******************************/
 @media only screen and (max-width:411px){
 
+  input{
+  font-size: 0.8rem;
+  }
 }
 
 /*************************RESPONSIVENESS 393*******************************/
 @media only screen and (max-width:393px){
   .c-form{
-    height: 87vh;
+    height: 95vh;
   }
 
   .associates a{
@@ -694,7 +697,7 @@ ul{
 /*************************RESPONSIVENESS 375*******************************/
 @media only screen and (max-width:375px){
   .c-form{
-    height: 93vh;
+    height: 80vh;
   }
 
   .associates a{

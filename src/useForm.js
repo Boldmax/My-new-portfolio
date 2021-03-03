@@ -15,6 +15,11 @@ const content = {
             type: "number",
             placeholder: "Phone Number",
         },
+        {
+            name: "subject",
+            type: "text",
+            placeholder: "Subject",
+        }
         
     ]
 }
