@@ -7,7 +7,8 @@ export default function Footer() {
             <div className="holder">
                 <div className="content-position">
                     <div className="conten">
-                        <p>+2348068191078</p>
+                        <p><i className="bi bi-phone-fill"></i> +2348068191078</p>
+                        
 
                     </div>
                     <div className="associates">
