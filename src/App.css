@@ -660,11 +660,14 @@ ul{
 }
 
 /*************************RESPONSIVENESS 393*******************************/
-@media only screen and (max-width:393px){
+@media only screen and (max-width:394px){
   .c-form{
     height: 95vh;
   }
 
+  .footer-com{
+    position: relative;
+  }
   .associates a{
     padding-bottom: 0.7rem;
   }
@@ -682,14 +685,14 @@ ul{
   }
 
   .form-display{
-    width: 20rem;
+    width: 17rem;
   }
 
   .form-line input{
-    width: 20rem;
+    width: 17rem;
   }
   .form-body{
-    width: 20rem;
+    width: 17rem;
   }
 }
 
