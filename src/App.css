@@ -538,7 +538,7 @@ ul{
 /*********************FORM FIELD***************************/
 .c-form{
   position: relative;
-  height: 60vh;
+  height: 80vh;
   width: 99.5vw;
   background-color: rgba(2, 1, 1, 0.89);
 }
@@ -572,7 +572,7 @@ ul{
    }
 
   .c-form{
-    height: 78vh;
+    height: 95vh;
     width: 99.5vw;
   }
 
@@ -700,7 +700,7 @@ ul{
 /*************************RESPONSIVENESS 375*******************************/
 @media only screen and (max-width:375px){
   .c-form{
-    height: 80vh;
+    height: 100vh;
   }
 
   .associates a{
@@ -805,5 +805,9 @@ ul{
       }
       .form-body{
         width: 18rem;
+      }
+
+      .about-wrapper{
+        height: 54rem;
       }
 }
