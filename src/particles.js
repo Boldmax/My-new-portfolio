@@ -1,15 +1,33 @@
-const ref = React.useRef();
-ref={ref}
+<Form onSubmit= {handleSubmit(onSubmit)}>
+<Form.Row style={{ width: "25rem", display: "grid", paddingTop: "4rem" }} className="m-auto" >
+    <Row >
+        <Form.Control name= "Name" ref={register}  className="form-line text-light" placeholder="Name" />
+        <Form.Text className="error-message"></Form.Text> 
+    </Row>
+    
+    <Row>
+        <Form.Control name= "email" ref={register}  className="form-line text-light" placeholder="Email"  />
+        <Form.Text className="error-message">{errors.email?.message}</Form.Text>
+    </Row>
+    <Row>
+        <Form.Control name= "PhoneNo" ref={register}  className="form-line text-light" placeholder="Phone No."  />
+        <Form.Text className="error-message">{errors.PhoneNo?.message}</Form.Text>
+    </Row>
+    <Row>
+        <Form.Control name= "subject" ref={register}  className="form-line text-light" placeholder="Subject"  />
+        <Form.Text className="error-message">{errors.subject?.message}</Form.Text>
+    </Row>
+    <Row>
+        <Form.Control style={{ height: "5rem" }} name= "messages" ref={register}  className="form-line text-light" placeholder="Messages" />
+        <Form.Text className="error-message">{errors.message?.message}</Form.Text>
+    </Row>
+    <Button className="submit-btn" variant="primary" type="submit">CONTACT ME</Button>
+</Form.Row>
 
-<form className="form-display" onSubmit={handleSubmit}>             
-<input
- type="text"
- name="username"
- className="form-line"
- placeholder="Name"
- value={values.username}
- onChange={handleChange}
- />
+</Form>
+
+
+
 
 <input
  type="email" 
@@ -36,5 +54,4 @@ value={values.subject}
 onChange={handleChange}                
 />
     
-    <input className="submit-btn" type="submit" value="Submit" />
-</form>
+   
