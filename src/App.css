@@ -355,6 +355,7 @@ padding-top: 1.6rem;
 .holder{
   position: relative;
   display: block;
+  padding-left: 0;
   width: 50vw;
   margin-right: auto;
   margin-left: auto;
@@ -364,6 +365,7 @@ padding-top: 1.6rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-left: 0;
 }
 
 .associates{
@@ -374,6 +376,7 @@ padding-top: 1.6rem;
   justify-content: space-between;
   padding-top: 2rem;
   align-self: center;
+  padding-left: 0;
 }
 
 .associates a{
@@ -650,12 +653,6 @@ width: 42rem;
     padding-top: 1rem;
   }
   
-  .copyright p{
-    font-size: 1.2rem;
-    text-align: center;
-  }
-  
-
 
 }
 
@@ -691,12 +688,18 @@ width: 42rem;
   }
   
   .associates{
-  width: 27rem;
+  width: 25rem;
   }
   
   .associates a{
-    padding: 1rem;
-    font-size: 0.7rem; 
+    padding-right: 1.1rem;
+    padding-left: 0rem;
+    font-size: 0.8rem; 
+    line-height: 0.3rem;
+  }
+
+  .logos{
+    width: 25rem;
   }
 }
 
