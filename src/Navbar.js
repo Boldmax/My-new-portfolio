@@ -17,12 +17,12 @@ export default function Navbar() {
           <ul className="navbar-nav m-auto">
             <li className="nav-item active">
               <a className="nav-link" aria-current="page" href="#home">HOME</a>
+            </li>           
+            <li className="nav-item">
+              <a className="nav-link" href="#about-me">ABOUT ME</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#skills">MY SKILLS</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#about-me">ABOUT ME</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#portfolio">PORTFOLIO</a>

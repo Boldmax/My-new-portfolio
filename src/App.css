@@ -267,6 +267,20 @@ text-align: center;
   margin-right: auto ; 
 }
 
+.m-title{
+  display: block;
+  position: relative !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  width: 10rem !important;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.sub-title{
+  color: orange;
+}
+
 /*************************CONTACT FORM*******************************/
 .c-form{
   position: relative;
@@ -383,13 +397,16 @@ padding-top: 1.6rem;
   font-size: 1.1rem; 
   text-decoration: none;
   color: #fff;
-  border-right: 2px solid #fff;
-  padding-right: 2.3rem;
+  /* border-right: 2px solid #fff; */
 }
 
-#contact{
-  border-right: none;
+.separator{
+  padding-left: 2.3rem;
 }
+
+/* #contact{
+  border-right: none;
+} */
 
 .copyright{
   padding-top: 2rem;
@@ -576,11 +593,18 @@ ul{
 }
 
 .associates{
-width: 42rem;
+width: 38rem;
+flex-wrap: nowrap;
+justify-content: center;
 }
 
 .associates a{
-  padding: 2rem;
+  padding-left: 1rem;
+  margin-left: 0px;
+}
+
+.separator{
+  padding-left: 1.4rem;
 }
 }
 
@@ -614,7 +638,6 @@ width: 42rem;
    /*********************Footer***************************/
    .footer-com{
     width: 99.5vw;
-   
   }
   
   .conten p{
@@ -631,16 +654,15 @@ width: 42rem;
   }
   
   .associates a{
-    font-size: 1rem; 
+    font-size: 1rem;
     padding-bottom: 1rem;
   }
   
   .associates{
-    padding-top: 1.5rem !important;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    padding-left: 1.3rem !important;
+    flex-wrap: nowrap !important;
+    width: 36rem;
   }
   
   .logos{
@@ -654,7 +676,9 @@ width: 42rem;
     padding-top: 1rem;
   }
   
-
+  .separator{
+    padding-left: 1.2rem;
+  }
 }
 
 /*************************RESPONSIVENESS 414*******************************/
@@ -689,15 +713,22 @@ width: 42rem;
   }
   
   .associates{
-  width: 25rem;
+  width: 31rem;
+  justify-content: center;
+  padding-top: 0px;
   }
   
   .associates a{
-    padding-right: 1.1rem;
-    padding-left: 0rem;
-    font-size: 0.8rem; 
+    font-size: 0.8rem;
+    flex-wrap: nowrap;
+    width: 8rem;
   }
 
+  .logos{
+    flex-wrap: nowrap !important;
+    width: 20.2rem !important;
+    font-size: 2rem !important;
+  }
 }
 
 /*************************RESPONSIVENESS 411*******************************/
@@ -757,13 +788,25 @@ width: 42rem;
   }
 
   .logos{
-    font-size: 2.1rem;
+    font-size: 1.8rem;
     width: 8rem;
+  }
+
+  .associates{
+  width: 30rem;
   }
 }
 
 /*************************RESPONSIVENESS 360*******************************/
+@media only screen and (max-width:360px){
+  .associates{
+    width: 28rem;
+    }
 
+    .associates a{
+      width: 8rem;
+      }
+}
 /*************************RESPONSIVENESS 320*******************************/
 @media only screen and (max-width:320px){
  /*********************ABOUT ME***************************/
@@ -808,7 +851,6 @@ width: 42rem;
   margin-right: 0;
 }
 
-
 .form-display{
   width: 20rem;
 }
@@ -819,6 +861,10 @@ width: 42rem;
 .form-body{
   width: 20rem;
 }
+
+.associates{
+  width: 26rem;
+  }
 
 }
 
@@ -832,7 +878,7 @@ width: 42rem;
       }
 
       .associates a{
-        font-size: 0.8rem; 
+        font-size: 0.7rem; 
         padding-right: 0.5rem;
         padding-left: 0.5rem;
       }
@@ -841,15 +887,13 @@ width: 42rem;
         align-self: center;
         width: 20rem;
       }
-
-      .copyright p{
-        font-size: 0.8rem;
-        text-align: start;
+      .copyright{
+        width: 20rem;
       }
 
       .logos{
-        font-size: 1.8rem;
-        width: 4rem;
+        font-size: 1.1rem;
+        width: 2rem;
       }
 
       .form-display{

@@ -16,10 +16,10 @@ export default function Footer() {
 
                     </div>
                     <div className="associates">
-                        <a href="#home">Home</a>
-                        <a href="#about">About Me</a>
-                        <a href="#skill">My Skills</a>
-                        <a href="#portfolio">Portfolio</a>
+                        <a href="#home">Home<span className="separator">|</span></a>
+                        <a href="#about">About<span className="separator">|</span></a>
+                        <a href="#skill">Skills<span className="separator">|</span></a>
+                        <a href="#portfolio">Portfolio<span className="separator">|</span></a>
                         <a id="contact" href="#contact">Contact</a>
                     </div>
                     <div>
