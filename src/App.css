@@ -339,7 +339,7 @@ textarea{
 .footer-com{
 position: relative;
 width: 98.7vw;
-height: 10rem;
+height: 20rem;
 color: #fff;
 background-color: #060708fa;
 }
@@ -355,40 +355,49 @@ padding-top: 1.6rem;
 .holder{
   position: relative;
   display: block;
-  width: 80vw;
+  width: 50vw;
   margin-right: auto;
   margin-left: auto;
 }
 
 .content-position{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 .associates{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  width: 10.2rem;
+  flex-wrap: nowrap;
+  width: 40rem;
   justify-content: space-between;
   padding-top: 2rem;
+  align-self: center;
 }
 
 .associates a{
   font-size: 1.1rem; 
   text-decoration: none;
   color: #fff;
+  border-right: 2px solid #fff;
+  padding-right: 2.3rem;
+}
+
+#contact{
+  border-right: none;
 }
 
 .copyright{
   padding-top: 2rem;
   display: flex;
   flex-direction: column;
+
 }
 
-.copyright p{
+.content-position p{
  text-align: center;
+ padding-top: 4rem;
 }
 
 .logos{
@@ -396,10 +405,11 @@ padding-top: 1.6rem;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  width: 12rem;
+  width: 22rem;
   padding-bottom: 1rem;
   padding-left: 0rem;
   font-size: 2.3rem;
+  align-self: center;
 }
 
 .logos i{
@@ -558,6 +568,15 @@ ul{
 /*********************FOOTER***************************/
 .footer-com{
   width: 99.5vw;
+  height: 25rem;
+}
+
+.associates{
+width: 42rem;
+}
+
+.associates a{
+  padding: 2rem;
 }
 }
 
@@ -591,7 +610,7 @@ ul{
    /*********************Footer***************************/
    .footer-com{
     width: 99.5vw;
-    height: 14rem;
+   
   }
   
   .conten p{
@@ -613,17 +632,16 @@ ul{
   }
   
   .associates{
-    width: 10.2rem !important;
     padding-top: 1.5rem !important;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
     padding-left: 1.3rem !important;
   }
   
   .logos{
     flex-wrap: nowrap !important;
-    width: 10.2rem !important;
+    width: 20.2rem !important;
     padding-bottom: 1rem !important;
     font-size: 2.2rem !important;
   }
@@ -666,6 +684,20 @@ ul{
      height: 66rem !important;
    }
 
+   /*********************Footer***************************/
+   .footer-com{
+    width: 99.5vw;
+    height: 25rem;
+  }
+  
+  .associates{
+  width: 27rem;
+  }
+  
+  .associates a{
+    padding: 1rem;
+    font-size: 0.7rem; 
+  }
 }
 
 /*************************RESPONSIVENESS 411*******************************/
@@ -763,9 +795,8 @@ ul{
 
 .logos{
   font-size: 2.1rem;
-  width: 6rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   text-align: center;
@@ -773,9 +804,10 @@ ul{
 
 .footer-com{
   width: 100vw;
-  height: 18rem;
+  height: 22rem;
   margin-right: 0;
 }
+
 
 .form-display{
   width: 20rem;
@@ -801,6 +833,13 @@ ul{
 
       .associates a{
         font-size: 0.8rem; 
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+      }
+
+      .associates{
+        align-self: center;
+        width: 20rem;
       }
 
       .copyright p{
@@ -810,7 +849,7 @@ ul{
 
       .logos{
         font-size: 1.8rem;
-        width: 6rem;
+        width: 4rem;
       }
 
       .form-display{
