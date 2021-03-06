@@ -774,6 +774,23 @@ justify-content: center;
   .form-body{
     width: 17rem;
   }
+
+  .associates a{
+    padding-bottom: 0.7rem;
+  }
+
+  .logos{
+    font-size: 1.8rem;
+    width: 8rem;
+  }
+
+  .associates{
+  width: 28rem;
+  }
+
+  .separator{
+    padding-left: 1.5rem;
+  }
 }
 
 
