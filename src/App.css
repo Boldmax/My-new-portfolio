@@ -797,7 +797,7 @@ justify-content: center;
   }
 
   .associates{
-  width: 21rem;
+    width: 96%;
   }
 
   .separator{
@@ -805,7 +805,7 @@ justify-content: center;
   }
 
   .ft-links{
-    width: 77%;
+    width: 83%;
   }
 }
 
@@ -827,10 +827,6 @@ justify-content: center;
   .logos{
     font-size: 1.8rem;
     width: 8rem;
-  }
-
-  .ft-links{
-    width: 85%;
   }
 
   .ft-links{
