@@ -15,12 +15,14 @@ export default function Footer() {
                         </ul>
 
                     </div>
-                    <div className="associates">
-                        <a href="#home">Home<span className="separator">|</span></a>
-                        <a href="#about-me">About<span className="separator">|</span></a>
-                        <a href="#skills">Skills<span className="separator">|</span></a>
-                        <a href="#portfolio">Portfolio<span className="separator">|</span></a>
-                        <a id="contact" href="#contact">Contact</a>
+                    <div className="ft-links">
+                        <div className="associates">
+                            <a href="#home">Home<span className="separator">|</span></a>
+                            <a href="#about-me">About<span className="separator">|</span></a>
+                            <a href="#skills">Skills<span className="separator">|</span></a>
+                            <a href="#portfolio">Portfolio<span className="separator">|</span></a>
+                            <a id="contact" href="#contact">Contact</a>
+                        </div>
                     </div>
                     <div>
                         <p>Copyright&copy; 2021 Olabode Adewumi</p>
