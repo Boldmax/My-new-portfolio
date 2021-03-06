@@ -752,7 +752,7 @@ justify-content: center;
 }
 
 /*************************RESPONSIVENESS 393*******************************/
-@media only screen and (max-width:393px){
+@media only screen and (max-width:394px){
   .c-form{
     height: 55rem;
   }
