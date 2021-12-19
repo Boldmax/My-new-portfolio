@@ -11,7 +11,7 @@ export default function Navbar() {
       <div className="container-fluid">
         <a className="navbar-brand" href="#home">BO<span className="logo-color">LD</span>MAX</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="bi bi-list text-light" style={{fontSize:"2.9rem"}}></span>
+          <span className="bi bi-list text-light" style={{fontSize:"2.9rem", outline:"none"}}></span>
         </button>
         <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
           <ul className="navbar-nav m-auto">

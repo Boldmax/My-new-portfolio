@@ -59,6 +59,10 @@ Nav ul li a {
   border-top: 0.1875rem solid var(--primary-blue);
 }
 
+.logo-color{
+  color: #00a2ff;
+}
+
 /*************************HEADER*******************************/
 
 .header-wrapper {
@@ -543,6 +547,18 @@ ul {
 /*************************RESPONSIVENESS 768*******************************/
 
 @media screen and (max-width: 768px) {
+
+  .navbar-nav > li > a.active,
+  .navbar-nav > li > a.active:focus {
+    width: 6rem;
+    border-top: 0.1875rem solid var(--primary-blue);
+  }
+  
+  .navbar-nav > li > a:hover {
+    border-top: 0.1875rem solid var(--primary-blue);
+    width: 6rem;
+  }
+
   /*********************ABOUT ME***************************/
   .about-wrapper {
     height: max-content;
