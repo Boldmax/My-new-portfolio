@@ -740,6 +740,7 @@ ul {
 /*************************RESPONSIVENESS 414*******************************/
 
 @media screen and (max-width: 425px) {
+
   /*********************My skill***************************/
 
   .positions {
@@ -806,6 +807,7 @@ ul {
 
 /*************************RESPONSIVENESS 411*******************************/
 @media screen and (max-width: 411px) {
+
   input {
     font-size: 0.8rem;
   }
@@ -875,6 +877,12 @@ ul {
 
 /*************************RESPONSIVENESS 375*******************************/
 @media screen and (max-width: 375px) {
+
+  .card1 img {
+    width: 37vw;
+    height: 20vh;
+  }
+
   .c-form {
     height: 100vh;
   }
