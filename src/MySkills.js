@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { card } from "react-bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
