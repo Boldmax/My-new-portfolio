@@ -37,7 +37,7 @@ export default function ContactForm() {
                                     ref={register}
                                 />
                                 </p>
-                                <p className="error-message">{errors.[input.name]?.message}</p>
+                                <p className="error-message">{errors[input.name]?.message}</p>
                                 </div>
                             )
                         })}

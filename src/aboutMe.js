@@ -1,31 +1,25 @@
-import React from 'react';
-import { Card } from "react-bootstrap";
 import image from "./mne.jpg"
 
 function AboutMe() {
     return (
         <div className="about-wrapper" id="about-me">
-            <div className="description" >
-                <div className="card-bod">
-                    <div className="card1">
-                        <img src={image} alt="my pictures" />
-                    </div>
-                    <Card className="card2" style={{ width: '30rem', height: '18rem' }}>
-                        <Card.Body className="b-none">
-                            <Card.Title>About Me</Card.Title>
-                            <Card.Text className="details">
-                                I am an highly motivated individual who is always willing to go extra miles for my client satisfaction,
-                                I am technology enthusiast, always willing to learn am apply new and efficient techniques. Programing is what
-                                I do with customer satisfaction in mind. We wish you a merry christmass and a happppy newww yearrrrrr!
-                        </Card.Text>
+            <div className="card1">
+                <img src={image} alt="my pictures" />
+            </div>
 
-                        </Card.Body>
-                    </Card>
+            <div className="card2">
+                <h2>About Me</h2>
+                <div className="details">
+                    <p>
+                        Software engineer, with extensive knowledge and years of experience
+                        working in web technologies, I am always willing to go the extra mile when required and always
+                        open to learning new technologies to improve on my software development skills as well as
+                        other relevant technologies delivering quality work.
+                    </p>
                 </div>
             </div>
         </div>
     )
 }
 
-export default AboutMe
-
+export default AboutMe;

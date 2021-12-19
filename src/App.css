@@ -1,6 +1,5 @@
-
-:root{
-  --primary-white:#fff;
+:root {
+  --primary-white: #fff;
   --primary-blue: #00a2ff;
   --primary-dark: rgba(24, 19, 19, 0);
   --primary-black: rgba(10, 10, 10, 0.829);
@@ -9,39 +8,39 @@
 /* html{
   scroll-behavior: smooth;
 } */
-body{
-  font-family: 'Roboto Condensed', sans-serif;
+body {
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 /*************************NAVBAR*******************************/
-.logo{
+.logo {
   width: 2.25rem;
 }
 
-.nav{
+.nav {
   z-index: 2;
 }
 
-.nav-link{
+.nav-link {
   letter-spacing: 0.0375rem;
   cursor: pointer;
 }
 
-Nav ul li a{
+Nav ul li a {
   text-transform: uppercase !important;
 }
 
-.navbar-toggler-icon{
+.navbar-toggler-icon {
   color: #fff !important;
 }
-.navbar-nav > li > a{
+.navbar-nav > li > a {
   margin-right: 3.95rem;
   margin-left: 3.95rem;
   color: var(--primary-white) !important;
   border-top: 0.1875rem solid var(--primary-dark);
 }
 
-.navbar-brand{
+.navbar-brand {
   max-width: 4.25rem;
   padding: 0.9rem !important;
   color: var(--primary-white) !important;
@@ -51,17 +50,18 @@ Nav ul li a{
   margin-left: 5rem !important;
 }
 
-.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus{
+.navbar-nav > li > a.active,
+.navbar-nav > li > a.active:focus {
   border-top: 0.1875rem solid var(--primary-blue);
 }
 
-.navbar-nav > li > a:hover{
+.navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--primary-blue);
 }
 
 /*************************HEADER*******************************/
 
-.header-wrapper{
+.header-wrapper {
   position: relative;
   background-image: url("backgrnd.jpg");
   background-size: cover;
@@ -69,27 +69,26 @@ Nav ul li a{
   background-position: center;
 }
 
-.main-info{
-display: flex;
-position: absolute;
-left: 0;
-top: 0;
-right: 0;
-bottom: 0;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-text-align: center;
+.main-info {
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.main-info h1{
+.main-info h1 {
   color: var(--primary-white);
 }
 
-
 /*************************OFFER BUTTON*******************************/
 
-.offer-button{
+.offer-button {
   margin-top: 50px;
   color: var(--primary-white);
   background-color: var(--primary-black);
@@ -101,139 +100,147 @@ text-align: center;
   z-index: 1;
 }
 
-.offer-button:hover{
+.offer-button:hover {
   text-decoration: none;
-  background-color:#00a2ff;
+  background-color: #00a2ff;
   color: black;
 }
 
 /*************************TYPED SCRIPT*******************************/
-.tsparticles-canvas-el{
+.tsparticles-canvas-el {
   position: absolute;
   height: 100vh;
   width: 100vw;
   z-index: 1;
 }
 
-.typed-text{
+.typed-text {
   color: var(--primary-white);
   font-size: 1.4rem;
-  
 }
 
 /*************************ABOUT ME*******************************/
-.about-wrapper{
-  position: relative;
-  height: 63vh;
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  height: max-content;
+  justify-content: space-around;
   width: 98vw;
-  padding-top: 2.5rem;
-  padding-bottom: 3rem;
+  padding: 5rem 1rem;
 }
 
-.description{
-  position: relative;
-   display: block;
-   width: max-content;
-   height: max-content;
-   margin-left: auto !important;
-   margin-right: auto !important;
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.card-bod{
-  margin-top: 5.5rem !important;
+.card-bod {
+  margin-top: 5.5rem;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   width: 60vw;
 }
-.card1{
-  position: relative;
-  width: 20rem;
+
+.card1 {
+  display: flex;
+  width: 40vw;
   height: 18rem;
-  border:none !important;
-  align-items: flex-end;
+  border: none;
+  align-items: center;
   justify-content: flex-end;
 }
 
-.card1 img{
+.card1 img {
   display: block;
-  margin-top: 2rem;
-  width: 53%;
-  height: 60%;
-  border-radius: 50% !important;
-  margin-right: 0;
-  margin-left: 80%;
+  width: 12vw;
+  height: 12vw;
+  border-radius: 50%;
 }
 
-.card2{
-  position: relative;
-  border:none !important;
+.card2 {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
 }
 
-.card-title {
-  font-size: 2.8rem !important;
+.card2 h2 {
+  font-size: 2.8rem;
   color: #00a2ff;
   text-align: start;
-  font-weight: lighter !important;
+  font-weight: lighter;
 }
 
-.details{
-  margin-top: 1.5rem !important;
-  font-size: 1.1rem !important;
-  justify-content: space-between !important;
-  margin-bottom: 2.0rem !important;
+.details p {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
   text-align: start;
-  line-height: 2.0rem !important;
-}
-
-.picture{
-  position: relative;
+  line-height: 2rem;
 }
 
 /*************************MY SKILLS*******************************/
 
-.myskill-card{
+.myskill-card {
   position: relative;
   padding-top: 5rem;
-  height: 55vh;
+  padding-bottom: 5rem;
+  height: max-content;
   width: 98.7vw;
   background-color: rgb(236, 235, 235);
 }
 
-.myskill-card h3{
+.myskill-card h3 {
   text-align: center;
   padding-bottom: 1.2rem;
   font-size: 2.5rem;
 }
 
-.sub-card{
+.card-cont {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-bottom: 3.5rem;
 }
 
-.positions{
-   display: block;
-   height: max-content;
-   width: 77%;
-   margin-left: auto ;
-   margin-right: auto ; 
+.positions {
+  display: block;
+  height: max-content;
+  width: 77%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.card-subtitle {
-  font-size: 1.3rem !important;
-  text-align: center;
+.skill-card {
+  width: 18vw;
+  height: 25vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 10px;
 }
 
-.centerP{
-  text-align: center;
-  margin-bottom: 1.5rem !important;
+.skill-card span {
+  font-size: 2rem;
+  color: #00a2ff;
+  margin-bottom: 1rem;
 }
 
+.skill-card h3 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.skill-card > p {
+  font-size: 1rem;
+  text-align: justify;
+}
 
 /*************************PORTFOLIO*******************************/
 
-.portfolio-card{
+.portfolio-card {
   position: relative;
   padding-top: 2rem;
   height: 80vh;
@@ -241,7 +248,7 @@ text-align: center;
   background-image: linear-gradient(45deg, #fff, rgba(31, 6, 6, 0.356));
 }
 
-.portfolio-card h3{
+.portfolio-card h3 {
   text-align: center;
   padding-top: 4.4rem !important;
   padding-bottom: 4.7rem !important;
@@ -249,25 +256,25 @@ text-align: center;
   color: #00a2ff;
 }
 
-.logo-color{
+.logo-color {
   color: #00a2ff !important;
 }
 
-.portfo-card{
+.portfo-card {
   display: flex;
   justify-content: space-between;
   padding-bottom: 2.1rem;
 }
 
-.portfolio-posit{
+.portfolio-posit {
   display: block;
   height: max-content;
   width: 82%;
-  margin-left: auto ;
-  margin-right: auto ; 
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.m-title{
+.m-title {
   display: block;
   position: relative !important;
   margin-right: auto !important;
@@ -277,47 +284,47 @@ text-align: center;
   color: #ffffff;
 }
 
-.sub-title{
+.sub-title {
   color: orange;
 }
 
 /*************************CONTACT FORM*******************************/
-.c-form{
+.c-form {
   position: relative;
   height: 98vh;
   width: 98.7vw;
   background-color: rgba(2, 1, 1, 0.89);
 }
 
-.form-line{
-  margin-top: 1rem ;
+.form-line {
+  margin-top: 1rem;
   background-color: #060708fa !important;
   border: none !important;
   border-radius: 5px;
 }
 
-.form h1{
+.form h1 {
   text-align: center;
   font-size: 2rem;
   padding-top: 6rem !important;
   color: #fff;
 }
 
-.submit-btn{
+.submit-btn {
   display: block;
-  margin-top: 2rem ;
-  margin-left: auto ;
+  margin-top: 2rem;
+  margin-left: auto;
   margin-right: auto;
-  width: 9rem ;
+  width: 9rem;
   height: 3rem;
   font-weight: bold;
   border: none;
-  background-color:  #00a2ff;
+  background-color: #00a2ff;
   border-radius: 5px;
   padding: 10px 0;
 }
 
-input{
+input {
   width: 25rem;
   background-color: #060708fa;
   color: #fff;
@@ -328,20 +335,20 @@ input{
   border-radius: 5px;
 }
 
-textarea{
+textarea {
   resize: none;
   height: 4rem;
   color: #fff;
   border-bottom: 0.3rem solid grey;
 }
 
-.form-display{
-    width: 25rem;
-    display: grid;
-    padding-top: 2rem ;
+.form-display {
+  width: 25rem;
+  display: grid;
+  padding-top: 2rem;
 }
 
-.form-body{
+.form-body {
   position: relative;
   display: block;
   width: 25rem;
@@ -350,23 +357,23 @@ textarea{
 }
 /*************************FOOTER*******************************/
 
-.footer-com{
-position: relative;
-width: 98.7vw;
-height: 20rem;
-color: #fff;
-background-color: #060708fa;
+.footer-com {
+  position: relative;
+  width: 98.7vw;
+  height: 20rem;
+  color: #fff;
+  background-color: #060708fa;
 }
 
-.conten{
-padding-top: 1.6rem;
+.conten {
+  padding-top: 1.6rem;
 }
 
-.conten p{
- font-size: 1.0rem;
+.conten p {
+  font-size: 1rem;
 }
 
-.holder{
+.holder {
   position: relative;
   display: block;
   padding-left: 0;
@@ -375,14 +382,14 @@ padding-top: 1.6rem;
   margin-left: auto;
 }
 
-.content-position{
+.content-position {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-left: 0;
 }
 
-.associates{
+.associates {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -393,14 +400,14 @@ padding-top: 1.6rem;
   padding-left: 0;
 }
 
-.associates a{
-  font-size: 1.1rem; 
+.associates a {
+  font-size: 1.1rem;
   text-decoration: none;
   color: #fff;
   /* border-right: 2px solid #fff; */
 }
 
-.separator{
+.separator {
   padding-left: 2.3rem;
 }
 
@@ -408,19 +415,18 @@ padding-top: 1.6rem;
   border-right: none;
 } */
 
-.copyright{
+.copyright {
   padding-top: 2rem;
   display: flex;
   flex-direction: column;
-
 }
 
-.content-position p{
- text-align: center;
- padding-top: 4rem;
+.content-position p {
+  text-align: center;
+  padding-top: 4rem;
 }
 
-.logos{
+.logos {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -433,102 +439,114 @@ padding-top: 1.6rem;
   align-self: center;
 }
 
-.logos i{
+.logos i {
   color: #00a2ff !important;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-.conten i{
+.conten i {
   font-size: 2rem;
-  color:  #00a2ff;
- }
+  color: #00a2ff;
+}
 
-.error-message{
+.error-message {
   color: red !important;
   font-size: 0.8rem !important;
 }
 
+@media screen and (max-width: 1536px) {
+  .skill-card {
+    width: 20vw;
+    height: 30vh;
+  }
+
+  .positions {
+    width: 85%;
+  }
+
+  .skill-card span {
+    font-size: 1.5rem;
+  }
+
+  .skill-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0rem;
+  }
+
+  .skill-card p {
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .skill-card {
+    padding: 1.2rem;
+    height: 32vh;
+  }
+
+  .skill-card p {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .skill-card {
+    height: 28vh;
+  }
+}
+
 /*************************RESPONSIVENESS 768*******************************/
 
-@media screen and (max-width:768px){
-
-        /*********************ABOUT ME***************************/
-  .about-wrapper{
-    position: relative;
+@media screen and (max-width: 768px) {
+  /*********************ABOUT ME***************************/
+  .about-wrapper {
     height: max-content;
-    width: 99.5vw;
+    width: 95vw;
     overflow: hidden;
   }
 
-  .description{
+  .description {
     position: relative;
-     display: block;
-     height: max-content;
-
-  }
-
-  .card-bod{
-    margin-top: 5.5rem !important;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 97vw !important;
-    padding-bottom: 3rem;
-  }
-
-  .card1{
     display: block;
-    position: relative;
-    height: 18rem;
+    height: max-content;
+  }
+
+  .card1 {
+    height: 45vh;
     width: 20rem;
-    border:none !important;
-    margin-left: auto;
-    margin-right: auto;
   }
-  
-  .card1 img{
-    display: block;
-    margin-top: 2rem;
-    width: 53%;
-    height: 60%;
-    border-radius: 50% !important;
-    margin-right: auto;
-    margin-left: auto;
+
+  .card1 img {
+    width: 26vw;
+    height: 20vh;
+    border-radius: 50%;
   }
-  
-  .card2{
+
+  .card2 {
     margin-top: 2rem;
     display: block;
     position: relative;
-    margin-right: auto !important;
-    margin-left: auto !important;
-    border:none !important;
-    width: 25rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 45vw;
   }
 
-  .card-title {
-    font-size: 2.8rem !important;
-    color: #00a2ff;
-    text-align: center !important;
-    font-weight: bold !important;
-  }
-  
-  .details{
-    margin-top: 1.5rem !important;
-    font-size: 1.1rem !important;
-    justify-content: space-between !important;
-    margin-bottom: 2.0rem !important;
-    text-align: center !important;
-    line-height: 2.0rem !important;
+  .card2 h2 {
+    font-size: 2rem;
+    text-align: center;
   }
 
-   /*********************MY SKILL***************************/
+  .details p {
+    font-size: 1.1rem;
+    text-align: justify;
+  }
 
-   .myskill-card{
+  /*********************MY SKILL***************************/
+
+  .myskill-card {
     position: relative;
     padding-top: 2rem;
     height: max-content;
@@ -537,205 +555,247 @@ ul{
     overflow: hidden;
   }
 
-   .sub-card{
+  .card-cont {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .positions {
+    width: 40rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .skill-card {
+    width: 38vw;
+    height: 23vh;
+    margin: 0.5rem;
+  }
+
+  /*********************MY PORTFOLIO***************************/
+
+  .portfolio-card {
+    position: relative;
+    padding-top: 2rem;
+    height: max-content;
+    width: 99.5vw;
+    background-image: linear-gradient(45deg, #fff, rgba(31, 6, 6, 0.356));
+    overflow: hidden;
+  }
+
+  .portfo-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding-bottom: 2.1rem;
   }
 
-  .positions{
+  .portfolio-posit {
     display: block;
     height: max-content;
-    width: 40rem;
-    margin-left: auto ;
-    margin-right: auto ; 
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
- }
+    width: 45rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
- /*********************MY PORTFOLIO***************************/
+  /*********************FORM FIELD***************************/
+  .c-form {
+    position: relative;
+    height: 80vh;
+    width: 99.5vw;
+    background-color: rgba(2, 1, 1, 0.89);
+    overflow: hidden;
+  }
 
- .portfolio-card{
-  position: relative;
-  padding-top: 2rem;
-  height: max-content;
-  width: 99.5vw;
-  background-image: linear-gradient(45deg, #fff, rgba(31, 6, 6, 0.356));
-  overflow: hidden;
-}
+  /*********************FOOTER***************************/
+  .footer-com {
+    width: 99.5vw;
+    height: 25rem;
+    overflow: hidden;
+  }
 
-.portfo-card{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-bottom: 2.1rem;
-}
+  .associates {
+    width: 38rem;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 
-.portfolio-posit{
-  display: block;
-  height: max-content;
-  width: 45rem;
-  margin-left: auto ;
-  margin-right: auto ; 
-}
+  .associates a {
+    padding-left: 1rem;
+    margin-left: 0px;
+  }
 
-/*********************FORM FIELD***************************/
-.c-form{
-  position: relative;
-  height: 80vh;
-  width: 99.5vw;
-  background-color: rgba(2, 1, 1, 0.89);
-  overflow: hidden;
-}
-
-/*********************FOOTER***************************/
-.footer-com{
-  width: 99.5vw;
-  height: 25rem;
-  overflow: hidden;
-}
-
-.associates{
-width: 38rem;
-flex-wrap: nowrap;
-justify-content: center;
-}
-
-.associates a{
-  padding-left: 1rem;
-  margin-left: 0px;
-}
-
-.separator{
-  padding-left: 1.4rem;
-}
+  .separator {
+    padding-left: 1.4rem;
+  }
 }
 
 /*************************RESPONSIVENESS 540*******************************/
 
-@media screen and (max-width:540px){
-
+@media screen and (max-width: 540px) {
   /*********************ABOUT ME***************************/
-  .about-wrapper{
-    width: 99.5vw;
+
+  .about-wrapper {
+    width: 99vw;
+    overflow: hidden;
   }
-  .portfolio-posit{
-    width: 40rem;
+
+  .description {
+    position: relative;
+    display: block;
+    height: max-content;
   }
+
+  .card1 {
+    height: 35vh;
+    width: 80vw;
+    justify-content: center;
+  }
+
+  .card1 img {
+    width: 35vw;
+    height: 20vh;
+    border-radius: 50%;
+  }
+
+  .card2 {
+    margin-top: 2rem;
+    display: block;
+    position: relative;
+    width: 80vw;
+  }
+
+  .card2 h2 {
+    font-size: 1.8rem;
+  }
+
+  .details p {
+    font-size: 1rem;
+  }
+
 
   /*********************MY SKILLS***************************/
-  .myskill-card{
+  .myskill-card {
     width: 99.5vw;
   }
 
-   /*********************MY PORTFOLIO***************************/
-   .portfolio-card{
+  /*********************MY PORTFOLIO***************************/
+  .portfolio-card {
     width: 99.5vw;
-   }
+  }
 
-  .c-form{
+  .c-form {
     height: 95vh;
     width: 99.5vw;
   }
 
-   /*********************Footer***************************/
-   .footer-com{
+  /*********************Footer***************************/
+  .footer-com {
     width: 99.5vw;
   }
-  
-  .conten p{
-    font-size: 1rem;
-   }
 
-   .conten i{
+  .conten p {
+    font-size: 1rem;
+  }
+
+  .conten i {
     font-size: 2rem;
-    color:  #00a2ff;
-   }
-  
-   .holder{
+    color: #00a2ff;
+  }
+
+  .holder {
     width: 95vw;
   }
-  
-  .associates a{
+
+  .associates a {
     font-size: 1rem;
     padding-bottom: 1rem;
   }
-  
-  .associates{
+
+  .associates {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap !important;
     width: 36rem;
   }
-  
-  .logos{
+
+  .logos {
     flex-wrap: nowrap !important;
     width: 20.2rem !important;
     padding-bottom: 1rem !important;
     font-size: 2.2rem !important;
   }
-  
-  .copyright{
+
+  .copyright {
     padding-top: 1rem;
   }
-  
-  .separator{
+
+  .separator {
     padding-left: 1.2rem;
   }
 }
 
 /*************************RESPONSIVENESS 414*******************************/
 
-@media screen and (max-width:414px){
+@media screen and (max-width: 425px) {
+  /*********************My skill***************************/
 
-   /*********************My skill***************************/
-   .sub-card{
-     flex-direction: column;
-     justify-content: space-around;
-   }
-
-   .positions{
-    width: 17rem !important;
-    height: 67rem !important;
+  .positions {
+    width: 100vw;
+    height: max-content;
   }
 
-   /*********************My Portfolio***************************/
-   .portfo-card{
-    flex-direction: column !important;
-   }
+  .skill-card {
+    width: 80vw;
+    height: 27vh;
+    margin: 1.5rem;
+  }
 
-   .portfolio-posit{
-     width: 20rem !important;
-     height: 66rem !important;
-   }
+  .card-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.5rem;
+  }
 
-   /*********************Footer***************************/
-   .footer-com{
+  /*********************My Portfolio***************************/
+  .portfo-card {
+    flex-direction: column;
+  }
+
+  .portfolio-posit {
+    width: 20rem !important;
+    height: 66rem !important;
+  }
+
+  /*********************Footer***************************/
+  .footer-com {
     width: 99.5vw;
     height: 25rem;
   }
-  
-  .associates{
-  width: 31rem;
-  justify-content: center;
-  padding-top: 0px;
+
+  .associates {
+    width: 31rem;
+    justify-content: center;
+    padding-top: 0px;
   }
-  
-  .associates a{
+
+  .associates a {
     font-size: 0.8rem;
     flex-wrap: nowrap;
     width: 8rem;
   }
 
-  .logos{
+  .logos {
     flex-wrap: nowrap !important;
     width: 20.2rem !important;
     font-size: 2rem !important;
   }
 
-  .ft-links{
+  .ft-links {
     display: block;
     position: relative;
     padding: 0;
@@ -745,221 +805,215 @@ justify-content: center;
 }
 
 /*************************RESPONSIVENESS 411*******************************/
-@media screen and (max-width:411px){
-
-  input{
-  font-size: 0.8rem;
+@media screen and (max-width: 411px) {
+  input {
+    font-size: 0.8rem;
   }
 
-  .ft-links{
+  .ft-links {
     width: 98%;
   }
 }
 
 /*************************RESPONSIVENESS 393*******************************/
-@media screen and (max-width:394px){
-  .c-form{
+@media screen and (max-width: 394px) {
+  .c-form {
     height: 55rem;
   }
 
-  .footer-com{
+  .footer-com {
     position: relative;
   }
-  .associates a{
+  .associates a {
     padding-bottom: 0.7rem;
   }
 
-  .logos{
+  .logos {
     font-size: 2.1rem;
     width: 8rem;
   }
 
-  .form-line{
+  .form-line {
     margin-top: 1.5rem !important;
     background-color: #060708fa !important;
     border: none !important;
     border-bottom: 0.1rem solid grey !important;
   }
 
-  .form-display{
+  .form-display {
     width: 17rem;
   }
 
-  .form-line input{
+  .form-line input {
     width: 17rem;
   }
-  .form-body{
+  .form-body {
     width: 17rem;
   }
 
-  .associates a{
+  .associates a {
     padding-bottom: 0.7rem;
   }
 
-  .logos{
+  .logos {
     font-size: 1.8rem;
     width: 8rem;
   }
 
-  .associates{
+  .associates {
     width: 96%;
   }
 
-  .separator{
+  .separator {
     padding-left: 1.1rem;
   }
 
-  .ft-links{
+  .ft-links {
     width: 83%;
   }
 }
 
-
 /*************************RESPONSIVENESS 375*******************************/
-@media screen and (max-width:375px){
-  .c-form{
+@media screen and (max-width: 375px) {
+  .c-form {
     height: 100vh;
   }
 
-  .associates a{
+  .associates a {
     padding-bottom: 0.7rem;
   }
 
-  .associates{
+  .associates {
     width: 96%;
   }
 
-  .logos{
+  .logos {
     font-size: 1.8rem;
     width: 8rem;
   }
 
-  .ft-links{
+  .ft-links {
     width: 83%;
   }
-
 }
 
 /*************************RESPONSIVENESS 360*******************************/
-@media screen and (max-width:360px){
-
-    .associates a{
-      width: 8rem;
-      }
+@media screen and (max-width: 360px) {
+  .associates a {
+    width: 8rem;
+  }
 }
 /*************************RESPONSIVENESS 320*******************************/
-@media screen and (max-width:320px){
- /*********************ABOUT ME***************************/
- .about-wrapper{
-  width: 99.5vw;
-  height: 50rem;
-}
-
-
-/*********************MY SKILLS***************************/
-.myskill-card{
-  width: 99.9vw;
-}
-
- /*********************MY PORTFOLIO***************************/
- .portfolio-card{
-  width: 99.9vw;
- }
-
-.c-form{
-  height: 47rem;
-  width: 99.9vw;
-}
-
-.form-control{
-  width: 22rem !important;
-  padding-left: 2.2rem !important;
-}
-
-.logos{
-  font-size: 2.1rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  text-align: center;
-}
-
-.footer-com{
-  width: 100vw;
-  height: 22rem;
-  margin-right: 0;
-}
-
-.form-display{
-  width: 20rem;
-}
-
-.form-line input{
-  width: 20rem;
-}
-.form-body{
-  width: 20rem;
-}
-
-.associates{
-  width: 26rem;
+@media screen and (max-width: 320px) {
+  /*********************ABOUT ME***************************/
+  .about-wrapper {
+    width: 99.5vw;
+    height: 50rem;
   }
 
-  .associates{
+  /*********************MY SKILLS***************************/
+  .myskill-card {
+    width: 99.9vw;
+  }
+
+  /*********************MY PORTFOLIO***************************/
+  .portfolio-card {
+    width: 99.9vw;
+  }
+
+  .c-form {
+    height: 47rem;
+    width: 99.9vw;
+  }
+
+  .form-control {
+    width: 22rem !important;
+    padding-left: 2.2rem !important;
+  }
+
+  .logos {
+    font-size: 2.1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .footer-com {
+    width: 100vw;
+    height: 22rem;
+    margin-right: 0;
+  }
+
+  .form-display {
+    width: 20rem;
+  }
+
+  .form-line input {
+    width: 20rem;
+  }
+  .form-body {
+    width: 20rem;
+  }
+
+  .associates {
+    width: 26rem;
+  }
+
+  .associates {
     width: 96%;
   }
-
 }
 
-@media screen and (max-width:280px){
-  .conten{
+@media screen and (max-width: 280px) {
+  .conten {
     width: 9rem;
-    }
+  }
 
-    .conten p{
-      font-size: 0.8rem;
-      }
+  .conten p {
+    font-size: 0.8rem;
+  }
 
-      .associates a{
-        font-size: 0.7rem;
-        width: 4rem; 
-      }
+  .associates a {
+    font-size: 0.7rem;
+    width: 4rem;
+  }
 
-      .associates{
-        align-self: center;
-        width: 94%;
-      }
+  .associates {
+    align-self: center;
+    width: 94%;
+  }
 
-      .copyright{
-        width: 20rem;
-      }
+  .copyright {
+    width: 20rem;
+  }
 
-      .logos{
-        font-size: 1.1rem;
-        width: 2rem;
-      }
+  .logos {
+    font-size: 1.1rem;
+    width: 2rem;
+  }
 
-      .form-display{
-        width: 18rem;
-      }
+  .form-display {
+    width: 18rem;
+  }
 
-      .form-line input{
-        width: 18rem;
-      }
-      .form-body{
-        width: 18rem;
-      }
+  .form-line input {
+    width: 18rem;
+  }
+  .form-body {
+    width: 18rem;
+  }
 
-      .about-wrapper{
-        height: 54rem;
-      }
+  .about-wrapper {
+    height: 54rem;
+  }
 
-      .ft-links{
-        width: 79%;
-      }
+  .ft-links {
+    width: 79%;
+  }
 
-      .separator{
-        padding-left: 0.7rem;
-      }
+  .separator {
+    padding-left: 0.7rem;
+  }
 }
