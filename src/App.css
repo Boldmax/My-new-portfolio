@@ -240,52 +240,78 @@ Nav ul li a {
 
 /*************************PORTFOLIO*******************************/
 
-.portfolio-card {
-  position: relative;
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 2rem;
-  height: 80vh;
+  padding-bottom: 6rem;
+  height: max-content;
   width: 98.7vw;
   background-image: linear-gradient(45deg, #fff, rgba(31, 6, 6, 0.356));
 }
 
-.portfolio-card h3 {
+.portfolio h3 {
   text-align: center;
-  padding-top: 4.4rem !important;
-  padding-bottom: 4.7rem !important;
+  padding-top: 4.4rem;
+  padding-bottom: 4.7rem;
   font-size: 2.3rem;
   color: #00a2ff;
 }
 
-.logo-color {
-  color: #00a2ff !important;
+.portfolio-posit {
+  height: max-content;
+  width: 82%;
+}
+
+.portfo-cont {
+  display: flex;
+  justify-content: space-around;
 }
 
 .portfo-card {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 19vw;
   padding-bottom: 2.1rem;
+  background-color: #fefefe;
 }
 
-.portfolio-posit {
-  display: block;
-  height: max-content;
-  width: 82%;
-  margin-left: auto;
-  margin-right: auto;
+.portfo-card > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
 }
 
-.m-title {
-  display: block;
-  position: relative !important;
-  margin-right: auto !important;
-  margin-left: auto !important;
-  width: 10rem !important;
+.portfo-card > div h4 {
   font-size: 2rem;
-  color: #ffffff;
+  color: #00a2ff;
+  font-weight: 400;
 }
 
-.sub-title {
-  color: orange;
+.portfo-card > div p {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.portfo-card > div button {
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 10rem;
+  background-color: #fefefe;
+  color: #00a2ff;
+  border: 1px solid #00a2ff;
+  border-radius: 5px;
+  padding: 8px 15px;
+}
+
+.portfo-card img {
+  width: 17vw;
+  height: 20vh;
 }
 
 /*************************CONTACT FORM*******************************/
@@ -479,6 +505,14 @@ ul {
   .skill-card p {
     font-size: 0.85rem;
   }
+
+  .portfo-card > div h4 {
+    font-size: 1.5rem;
+  }
+
+  .portfo-card > div button {
+    font-size: 1.3rem;
+  }
 }
 
 @media screen and (max-width: 1366px) {
@@ -489,6 +523,14 @@ ul {
 
   .skill-card p {
     font-size: 0.75rem;
+  }
+
+  .portfo-card > div h4 {
+    font-size: 1.4rem;
+  }
+
+  .portfo-card > div button {
+    font-size: 1.2rem;
   }
 }
 
@@ -575,29 +617,27 @@ ul {
 
   /*********************MY PORTFOLIO***************************/
 
-  .portfolio-card {
-    position: relative;
-    padding-top: 2rem;
-    height: max-content;
-    width: 99.5vw;
-    background-image: linear-gradient(45deg, #fff, rgba(31, 6, 6, 0.356));
-    overflow: hidden;
-  }
-
-  .portfo-card {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-bottom: 2.1rem;
-  }
-
   .portfolio-posit {
-    display: block;
     height: max-content;
     width: 45rem;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .portfo-cont {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .portfo-card {
+    width: 40vw;
+    margin-top: 2.5rem;
+  }
+
+  .portfo-card img {
+    width: 35vw;
+    height: 20vh;
   }
 
   /*********************FORM FIELD***************************/
@@ -675,7 +715,6 @@ ul {
     font-size: 1rem;
   }
 
-
   /*********************MY SKILLS***************************/
   .myskill-card {
     width: 99.5vw;
@@ -740,7 +779,6 @@ ul {
 /*************************RESPONSIVENESS 414*******************************/
 
 @media screen and (max-width: 425px) {
-
   /*********************My skill***************************/
 
   .positions {
@@ -763,13 +801,25 @@ ul {
   }
 
   /*********************My Portfolio***************************/
-  .portfo-card {
+  .portfo-cont {
     flex-direction: column;
   }
 
   .portfolio-posit {
-    width: 20rem !important;
-    height: 66rem !important;
+    width: max-content;
+    height: max-content;
+  }
+
+  .portfo-card {
+    width: 85vw;
+    margin-top: 5rem;
+    border-radius: 10px;
+    padding-bottom: 4rem;
+  }
+
+  .portfo-card img {
+    width: 75vw;
+    height: 30vh;
   }
 
   /*********************Footer***************************/
@@ -807,7 +857,6 @@ ul {
 
 /*************************RESPONSIVENESS 411*******************************/
 @media screen and (max-width: 411px) {
-
   input {
     font-size: 0.8rem;
   }
@@ -877,7 +926,6 @@ ul {
 
 /*************************RESPONSIVENESS 375*******************************/
 @media screen and (max-width: 375px) {
-
   .card1 img {
     width: 37vw;
     height: 20vh;
