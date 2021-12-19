@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 
 const MySkills = () => {
     useEffect(() => {
-        Aos.init({ duration: 1000 });
+        Aos.init({ duration: 500 });
     }, []);
     return (
         <div className="myskill-card" id="skills">
