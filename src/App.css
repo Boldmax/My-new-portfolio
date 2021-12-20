@@ -5,9 +5,6 @@
   --primary-black: rgba(10, 10, 10, 0.829);
 }
 
-/* html{
-  scroll-behavior: smooth;
-} */
 body {
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -33,6 +30,7 @@ Nav ul li a {
 .navbar-toggler-icon {
   color: #fff !important;
 }
+
 .navbar-nav > li > a {
   margin-right: 3.95rem;
   margin-left: 3.95rem;
@@ -59,7 +57,7 @@ Nav ul li a {
   border-top: 0.1875rem solid var(--primary-blue);
 }
 
-.logo-color{
+.logo-color {
   color: #00a2ff;
 }
 
@@ -320,10 +318,10 @@ Nav ul li a {
 
 /*************************CONTACT FORM*******************************/
 .c-form {
-  position: relative;
-  height: 98vh;
+  height: max-content;
   width: 98.7vw;
   background-color: rgba(2, 1, 1, 0.89);
+  padding-bottom: 3rem;
 }
 
 .form-line {
@@ -542,18 +540,22 @@ ul {
   .skill-card {
     height: 28vh;
   }
+
+  .navbar-nav > li > a {
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
 }
 
 /*************************RESPONSIVENESS 768*******************************/
 
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 800px) {
   .navbar-nav > li > a.active,
   .navbar-nav > li > a.active:focus {
     width: 6rem;
     border-bottom: 0.1875rem solid var(--primary-blue);
   }
-  
+
   .navbar-nav > li > a:hover {
     border-bottom: 0.1875rem solid var(--primary-blue);
     width: 6rem;
@@ -838,6 +840,10 @@ ul {
     height: 30vh;
   }
 
+  .portfolio h3 {
+    padding-bottom: 1.2rem;
+  }
+
   /*********************Footer***************************/
   .footer-com {
     width: 99.5vw;
@@ -873,6 +879,19 @@ ul {
 
 /*************************RESPONSIVENESS 411*******************************/
 @media screen and (max-width: 411px) {
+
+
+
+  .card1 img {
+    width: 11rem;
+    height: 11rem;
+  }
+
+  .portfo-card img {
+    width: 75vw;
+    height: 22vh;
+  }
+
   input {
     font-size: 0.8rem;
   }
@@ -943,8 +962,8 @@ ul {
 /*************************RESPONSIVENESS 375*******************************/
 @media screen and (max-width: 375px) {
   .card1 img {
-    width: 37vw;
-    height: 20vh;
+    width: 11rem;
+    height: 11rem;
   }
 
   .c-form {
@@ -973,6 +992,10 @@ ul {
 @media screen and (max-width: 360px) {
   .associates a {
     width: 8rem;
+  }
+
+  .skill-card {
+    height: max-content;
   }
 }
 /*************************RESPONSIVENESS 320*******************************/

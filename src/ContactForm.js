@@ -1,5 +1,4 @@
 import React from 'react';
-//import { Form, Row, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 //import Validate from "./validateInfo";
 import content from "./useForm";
@@ -25,26 +24,25 @@ export default function ContactForm() {
             <div className="form">
                 <h1>CONTACT ME</h1>
                 <div className="form-body">
-                    <form className="form-display" onSubmit= {handleSubmit(onSubmit)}>
+                    <form className="form-display" onSubmit={handleSubmit(onSubmit)}>
                         {content.inputs.map((input, key) => {
                             return (
-                               <div  key={key}>
+                                <div key={key}>
                                     <p className="form-line">
-                                <input
-                                    type="text"
-                                    name={input.name}                                   
-                                    placeholder={input.placeholder}
-                                    ref={register}
-                                />
-                                </p>
-                                <p className="error-message">{errors[input.name]?.message}</p>
+                                        <input
+                                            type="text"
+                                            name={input.name}
+                                            placeholder={input.placeholder}
+                                            ref={register}
+                                        />
+                                    </p>
+                                    <p className="error-message">{errors[input.name]?.message}</p>
                                 </div>
                             )
                         })}
-                        <textarea name="message"  ref={register} placeholder="message" className="form-line"></textarea>
+                        <textarea name="message" ref={register} placeholder="message" className="form-line"></textarea>
                         <p className="error-message">{errors.message?.message}</p>
-                         <input className="submit-btn" type="submit" value="Submit" />
-                         
+                        <input className="submit-btn" type="submit" value="Submit" />
 
                     </form>
                 </div>

@@ -1,26 +1,23 @@
 import React, { useEffect } from 'react';
-/* import { div } from "react-bootstrap"; */
-/* import eazyRent from "./EaZyRent.png"; */
 import Aos from "aos";
 import "aos/dist/aos.css";
 import portfolio1 from "./images/portfolio1.png";
 import portfolio2 from "./images/portfolio2.png";
 import portfolio3 from "./images/portfolio3.png";
 import portfolio4 from "./images/portfolio4.png";
-//import { Animate } from "react-rebound";
 
 export default function Portfolio() {
-    /* const [hovered, setHovered] = useState(false); */
+
 
     useEffect(() => {
         Aos.init({ duration: 1000 });
     }, []);
+    
     return (
         <div className="portfolio" id="portfolio">
             <h3>PORTFOLIO</h3>
             <div className="portfolio-posit">
                 <div className="portfo-cont">
-                    {/* <Animate scaleX={hovered ? 1.3 : 1} scaleY={hovered ? 1.3 : 1}> */}
                     <div className="portfo-card" data-aos="fade-up" >
                         <img src={portfolio1} alt="portfolio" />
                         <div>
@@ -30,7 +27,6 @@ export default function Portfolio() {
                             <button href="https://stark-brook-46223.herokuapp.com/">View App</button>
                         </div>
                     </div>
-                    {/* </Animate> */}
 
                     <div data-aos="fade-up" className="portfo-card">
                         <img src={portfolio2} alt="portfolio" />
