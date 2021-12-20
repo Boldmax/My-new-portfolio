@@ -1,6 +1,4 @@
-import React from 'react';
 import { useForm } from "react-hook-form";
-//import Validate from "./validateInfo";
 import content from "./useForm";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";

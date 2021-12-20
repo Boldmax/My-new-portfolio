@@ -326,15 +326,15 @@ Nav ul li a {
 
 .form-line {
   margin-top: 1rem;
-  background-color: #060708fa !important;
-  border: none !important;
+  background-color: #060708fa;
+  border: none;
   border-radius: 5px;
 }
 
 .form h1 {
   text-align: center;
   font-size: 2rem;
-  padding-top: 6rem !important;
+  padding-top: 6rem;
   color: #fff;
 }
 
@@ -361,6 +361,7 @@ input {
   border: none;
   border-bottom: 0.2rem solid grey;
   border-radius: 5px;
+  margin: 3rem;
 }
 
 textarea {
@@ -380,8 +381,15 @@ textarea {
   position: relative;
   display: block;
   width: 25rem;
-  margin-right: auto !important;
-  margin-left: auto !important;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.error-message {
+  color: rgb(204, 35, 35);
+  font-size: 0.9rem;
+  position: absolute;
+  margin-top: 2.8rem;
 }
 /*************************FOOTER*******************************/
 
@@ -480,10 +488,6 @@ ul {
   color: #00a2ff;
 }
 
-.error-message {
-  color: red !important;
-  font-size: 0.8rem !important;
-}
 
 @media screen and (max-width: 1536px) {
   .skill-card {
@@ -661,7 +665,7 @@ ul {
   /*********************FORM FIELD***************************/
   .c-form {
     position: relative;
-    height: 80vh;
+/*     height: 80vh; */
     width: 99.5vw;
     background-color: rgba(2, 1, 1, 0.89);
     overflow: hidden;
@@ -744,8 +748,12 @@ ul {
   }
 
   .c-form {
-    height: 95vh;
     width: 99.5vw;
+  }
+
+  .error-message {
+    font-size: 0.8rem;
+    margin-top: 3.2rem;
   }
 
   /*********************Footer***************************/
@@ -903,9 +911,9 @@ ul {
 
 /*************************RESPONSIVENESS 393*******************************/
 @media screen and (max-width: 394px) {
-  .c-form {
+/*   .c-form {
     height: 55rem;
-  }
+  } */
 
   .footer-com {
     position: relative;
@@ -966,9 +974,9 @@ ul {
     height: 11rem;
   }
 
-  .c-form {
+/*   .c-form {
     height: 100vh;
-  }
+  } */
 
   .associates a {
     padding-bottom: 0.7rem;
@@ -997,6 +1005,10 @@ ul {
   .skill-card {
     height: max-content;
   }
+
+  .error-message {
+    margin-top: 3.8rem;
+  }
 }
 /*************************RESPONSIVENESS 320*******************************/
 @media screen and (max-width: 320px) {
@@ -1017,7 +1029,6 @@ ul {
   }
 
   .c-form {
-    height: 47rem;
     width: 99.9vw;
   }
 
