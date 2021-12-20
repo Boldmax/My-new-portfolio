@@ -5,10 +5,10 @@ function Header() {
     return (
         <div className="header-wrapper" id="home">
             <div className="main-info">
-                <h1>Hi, Am Olabode, A Software Engineer...</h1>
+                <h1>Hi, I Am Olabode, A Software Developer...</h1>
                 <Typed
                     className="typed-text"
-                    strings={["I Will Develop A primium Rated User Interface...", "I Will Develop An Efficient Server Side Application...", "I Work With Version Control Technonology...", "Am A Fan Of Test Driven development..."]}
+                    strings={["I Develop Web Applications...", "Frontend and Backend applications...", "I Work With Version Control Technonology...", "I Develop Web API..."]}
                     typeSpeed={35}
                     backSpeed={60}
                     loop
@@ -20,4 +20,4 @@ function Header() {
     )
 }
 
-export default Header
+export default Header;

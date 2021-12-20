@@ -5,6 +5,21 @@
   --primary-black: rgba(10, 10, 10, 0.829);
 }
 
+::-webkit-scrollbar {
+  width: 0.7rem;
+  background-color: var(--primary-black);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-white);
+  border-radius: 0.5rem;
+}
+
+/* ::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary-white);
+} */
+
 body {
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -311,6 +326,10 @@ Nav ul li a {
   padding: 8px 15px;
 }
 
+.portfo-card > div button a {
+  text-decoration: none;
+}
+
 .portfo-card img {
   width: 17vw;
   height: 20vh;
@@ -351,7 +370,6 @@ Nav ul li a {
 
 .form-display > div input {
   width: 25rem;
-  background-color: #060708fa;
   color: #fff;
   height: 2rem;
   font-size: 1.5rem;
@@ -359,6 +377,7 @@ Nav ul li a {
   border-bottom: 0.2rem solid grey;
   border-radius: 5px;
   margin-bottom: 1.8rem;
+  background-color: #060708fa;
 }
 
 textarea {
@@ -371,19 +390,10 @@ textarea {
 }
 
 .form-display {
-  /* width: 25rem; */
   display: flex;
   flex-direction: column;
   padding-top: 2rem;
 }
-
-/* .form-body {
-  position: relative;
-  display: block;
-  width: 25rem;
-  margin-right: auto;
-  margin-left: auto;
-} */
 
 .error-message {
   color: #cc2323;
@@ -441,16 +451,11 @@ textarea {
   font-size: 1.1rem;
   text-decoration: none;
   color: #fff;
-  /* border-right: 2px solid #fff; */
 }
 
 .separator {
   padding-left: 2.3rem;
 }
-
-/* #contact{
-  border-right: none;
-} */
 
 .copyright {
   padding-top: 2rem;
@@ -917,7 +922,6 @@ ul {
 
 /*************************RESPONSIVENESS 393*******************************/
 @media screen and (max-width: 394px) {
-
   .footer-com {
     position: relative;
   }
@@ -929,7 +933,6 @@ ul {
     font-size: 2.1rem;
     width: 8rem;
   }
-
 
   .associates a {
     padding-bottom: 0.7rem;

@@ -1,7 +1,7 @@
 /* import { useForm } from "react-hook-form"; */
-import content from "./useForm";
 /* import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup"; */
+import content from "./useForm";
 import emailjs from 'emailjs-com';
 
 /* const schema = yup.object().shape({
@@ -21,7 +21,6 @@ export default function ContactForm() {
     };
     console.log(errors) */
     const sendEmail = (e) => {
-
         e.preventDefault();
 
         emailjs.sendForm("service_ox22jck", "template_yf7xhit", e.target, "user_UJF0kDRVsV7SVc9uGYvlu")

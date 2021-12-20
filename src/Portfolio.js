@@ -12,7 +12,7 @@ export default function Portfolio() {
     useEffect(() => {
         Aos.init({ duration: 1000 });
     }, []);
-    
+
     return (
         <div className="portfolio" id="portfolio">
             <h3>PORTFOLIO</h3>
@@ -24,7 +24,7 @@ export default function Portfolio() {
                             <h4>Mobile Restaurant</h4>
                             <p>Developed with React, Redux, Node and Express Js. Website
                                 adaptable to all devices, with ui components and animated interactions. </p>
-                            <button href="https://stark-brook-46223.herokuapp.com/">View App</button>
+                            <button><a href="https://stark-brook-46223.herokuapp.com/">View App</a></button>
                         </div>
                     </div>
 
@@ -34,7 +34,7 @@ export default function Portfolio() {
                             <h4>Goodies Shop</h4>
                             <p>Developed with React, Redux, Node and Express Js. Website
                                 adaptable to all devices, with ui components and animated interactions.</p>
-                            <button href="https://classicbuy-ecommerce.herokuapp.com/">View App</button>
+                            <button><a href="https://classicbuy-ecommerce.herokuapp.com/">View App</a></button>
                         </div>
                     </div>
 
@@ -44,7 +44,7 @@ export default function Portfolio() {
                             <h4>Trendy Shoes</h4>
                             <p>Developed with React, Redux, Node and Express Js. Website
                                 adaptable to all devices, with ui components and animated interactions.</p>
-                            <button href="https://trendyshoeapp.herokuapp.com/">View App</button>
+                            <button><a href="https://trendyshoeapp.herokuapp.com/">View App</a></button>
                         </div>
                     </div>
 
@@ -53,9 +53,9 @@ export default function Portfolio() {
                         <div>
                             <h4>Live Love Foundation</h4>
                             <p>Developed with React, Redux, Node and Express Js. Website
-                                adaptable to all devices,
+                            adaptable to all devices,
                                 with ui components and animated interactions. </p>
-                            <button href="https://livelovefoundatn.netlify.app/">View App</button>
+                            <button><a href="https://livelovefoundation-ngo.netlify.app/">View App</a></button>
                         </div>
                     </div>
 
