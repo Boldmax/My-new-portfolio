@@ -1,4 +1,4 @@
-import image from "./mne.jpg"
+import image from "./mne.jpg";
 
 function AboutMe() {
     return (
