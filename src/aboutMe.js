@@ -10,7 +10,7 @@ function AboutMe() {
     }, []);
 
     return (
-        <div className="about-wrapper" id="about-me" data-aos="fade-left">
+        <div className="about-wrapper" id="about-me" data-aos="fade-down">
             <div className="card1">
                 <img src={image} alt="my pictures" />
             </div>
