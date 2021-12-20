@@ -18,7 +18,7 @@ export default function Portfolio() {
             <h3>PORTFOLIO</h3>
             <div className="portfolio-posit">
                 <div className="portfo-cont">
-                    <div className="portfo-card" data-aos="fade-up" >
+                    <div className="portfo-card" data-aos="fade-right" >
                         <img src={portfolio1} alt="portfolio" />
                         <div>
                             <h4>Mobile Restaurant</h4>
@@ -28,7 +28,7 @@ export default function Portfolio() {
                         </div>
                     </div>
 
-                    <div data-aos="fade-up" className="portfo-card">
+                    <div data-aos="fade-left" className="portfo-card">
                         <img src={portfolio2} alt="portfolio" />
                         <div>
                             <h4>Goodies Shop</h4>
@@ -38,7 +38,7 @@ export default function Portfolio() {
                         </div>
                     </div>
 
-                    <div data-aos="fade-up" className="portfo-card">
+                    <div data-aos="fade-right" className="portfo-card">
                         <img src={portfolio3} alt="portfolio" />
                         <div>
                             <h4>Trendy Shoes</h4>
@@ -48,7 +48,7 @@ export default function Portfolio() {
                         </div>
                     </div>
 
-                    <div data-aos="fade-up" className="portfo-card">
+                    <div data-aos="fade-down" className="portfo-card">
                         <img src={portfolio4} alt="portfolio" />
                         <div>
                             <h4>Live Love Foundation</h4>
