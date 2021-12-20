@@ -349,7 +349,7 @@ Nav ul li a {
   padding: 10px 0;
 }
 
-input {
+.form-display > div input {
   width: 25rem;
   background-color: #060708fa;
   color: #fff;
@@ -358,7 +358,7 @@ input {
   border: none;
   border-bottom: 0.2rem solid grey;
   border-radius: 5px;
-  margin: 3rem;
+  margin-bottom: 1.8rem;
 }
 
 textarea {
@@ -367,22 +367,23 @@ textarea {
   background-color: #060708fa;
   border-bottom: 0.3rem solid grey;
   resize: none;
+  width: 25rem;
 }
 
 .form-display {
-  width: 25rem;
+  /* width: 25rem; */
   display: flex;
   flex-direction: column;
   padding-top: 2rem;
 }
 
-.form-body {
+/* .form-body {
   position: relative;
   display: block;
   width: 25rem;
   margin-right: auto;
   margin-left: auto;
-}
+} */
 
 .error-message {
   color: #cc2323;
@@ -664,10 +665,14 @@ ul {
   /*********************FORM FIELD***************************/
   .c-form {
     position: relative;
-    /*     height: 80vh; */
     width: 99.5vw;
     background-color: rgba(2, 1, 1, 0.89);
     overflow: hidden;
+  }
+
+  .form-display > div input,
+  textarea {
+    width: 90vw;
   }
 
   /*********************FOOTER***************************/
@@ -896,8 +901,13 @@ ul {
     height: 22vh;
   }
 
-  input {
+  .form-display > div input {
     font-size: 0.8rem;
+  }
+
+  .form-display > div input,
+  textarea {
+    width: 90vw;
   }
 
   .ft-links {
@@ -907,9 +917,6 @@ ul {
 
 /*************************RESPONSIVENESS 393*******************************/
 @media screen and (max-width: 394px) {
-  /*   .c-form {
-    height: 55rem;
-  } */
 
   .footer-com {
     position: relative;
@@ -923,23 +930,6 @@ ul {
     width: 8rem;
   }
 
-  .form-line {
-    margin-top: 1.5rem !important;
-    background-color: #060708fa !important;
-    border: none !important;
-    border-bottom: 0.1rem solid grey !important;
-  }
-
-  .form-display {
-    width: 17rem;
-  }
-
-  .form-line input {
-    width: 17rem;
-  }
-  .form-body {
-    width: 17rem;
-  }
 
   .associates a {
     padding-bottom: 0.7rem;
@@ -969,10 +959,6 @@ ul {
     width: 11rem;
     height: 11rem;
   }
-
-  /*   .c-form {
-    height: 100vh;
-  } */
 
   .associates a {
     padding-bottom: 0.7rem;
@@ -1028,11 +1014,6 @@ ul {
     width: 99.9vw;
   }
 
-  .form-control {
-    width: 22rem !important;
-    padding-left: 2.2rem !important;
-  }
-
   .logos {
     font-size: 2.1rem;
     display: flex;
@@ -1046,17 +1027,6 @@ ul {
     width: 100vw;
     height: 22rem;
     margin-right: 0;
-  }
-
-  .form-display {
-    width: 20rem;
-  }
-
-  .form-line input {
-    width: 20rem;
-  }
-  .form-body {
-    width: 20rem;
   }
 
   .associates {
@@ -1094,17 +1064,6 @@ ul {
   .logos {
     font-size: 1.1rem;
     width: 2rem;
-  }
-
-  .form-display {
-    width: 18rem;
-  }
-
-  .form-line input {
-    width: 18rem;
-  }
-  .form-body {
-    width: 18rem;
   }
 
   .about-wrapper {

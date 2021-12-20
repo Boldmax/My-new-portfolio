@@ -19,33 +19,27 @@ export default function ContactForm() {
     console.log(errors)
     return (
         <div className="c-form" id="contact">
-            {/* <div className="form"> */}
             <h1>CONTACT ME</h1>
-            <div className="form-body">
-                <form className="form-display" onSubmit={handleSubmit(onSubmit)}>
-                    {content.inputs.map((input, key) => {
-                        return (
-                            <div key={key}>
-                                <p className="form-line">
-                                    <input
-                                        type="text"
-                                        name={input.name}
-                                        placeholder={input.placeholder}
-                                        ref={register}
-                                        required='required'
-                                    />
-                                </p>
-                                <p className="error-message">{errors[input.name]?.message}</p>
-                            </div>
-                        )
-                    })}
-                    <textarea rows="4" maxLength='500' required='required' name="message" ref={register} placeholder="message" className="form-line"></textarea>
-                    <p className="error-message">{errors.message?.message}</p>
-                    <input className="submit-btn" type="submit" value="Submit" />
+            <form className="form-display" onSubmit={handleSubmit(onSubmit)}>
+                {content.inputs.map((input, key) => {
+                    return (
+                        <div key={key}>
+                            <input
+                                type="text"
+                                name={input.name}
+                                placeholder={input.placeholder}
+                                ref={register}
+                                required='required'
+                            />
+                            <p className="error-message">{errors[input.name]?.message}</p>
+                        </div>
+                    )
+                })}
+                <textarea rows="4" maxLength='500' required='required' name="message" ref={register} placeholder="message" /* className="form-line" */></textarea>
+                <p className="error-message">{errors.message?.message}</p>
+                <input className="submit-btn" type="submit" value="Submit" />
 
-                </form>
-            </div>
-            {/* </div> */}
+            </form>
         </div>
     )
 }
