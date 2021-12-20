@@ -14,7 +14,7 @@ import Footer from "./Footer";
 
 function App() {
   return (
-    <>
+    <div className='body'>
       <Particles
         params={{
           particles: {
@@ -42,7 +42,7 @@ function App() {
       <Portfolio />     
       <ContactForm />  
       <Footer/> 
-    </>
+    </div>
   );
 }
 

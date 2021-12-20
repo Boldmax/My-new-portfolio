@@ -24,6 +24,10 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+.body {
+  overflow: hidden;
+}
+
 /*************************NAVBAR*******************************/
 .logo {
   width: 2.25rem;
@@ -330,7 +334,6 @@ Nav ul li a {
   text-decoration: none;
   color: #00a2ff;
   font-weight: 400;
-
 }
 
 .portfo-card img {
