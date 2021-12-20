@@ -322,16 +322,13 @@ Nav ul li a {
   width: 98.7vw;
   background-color: rgba(2, 1, 1, 0.89);
   padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.form-line {
-  margin-top: 1rem;
-  background-color: #060708fa;
-  border: none;
-  border-radius: 5px;
-}
-
-.form h1 {
+.c-form h1 {
   text-align: center;
   font-size: 2rem;
   padding-top: 6rem;
@@ -365,15 +362,17 @@ input {
 }
 
 textarea {
-  resize: none;
   height: 4rem;
   color: #fff;
+  background-color: #060708fa;
   border-bottom: 0.3rem solid grey;
+  resize: none;
 }
 
 .form-display {
   width: 25rem;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   padding-top: 2rem;
 }
 
@@ -386,7 +385,8 @@ textarea {
 }
 
 .error-message {
-  color: rgb(204, 35, 35);
+  color: #cc2323;
+  background-color: #fefefe;
   font-size: 0.9rem;
   position: absolute;
   margin-top: 2.8rem;
@@ -487,7 +487,6 @@ ul {
   font-size: 2rem;
   color: #00a2ff;
 }
-
 
 @media screen and (max-width: 1536px) {
   .skill-card {
@@ -665,7 +664,7 @@ ul {
   /*********************FORM FIELD***************************/
   .c-form {
     position: relative;
-/*     height: 80vh; */
+    /*     height: 80vh; */
     width: 99.5vw;
     background-color: rgba(2, 1, 1, 0.89);
     overflow: hidden;
@@ -887,9 +886,6 @@ ul {
 
 /*************************RESPONSIVENESS 411*******************************/
 @media screen and (max-width: 411px) {
-
-
-
   .card1 img {
     width: 11rem;
     height: 11rem;
@@ -911,7 +907,7 @@ ul {
 
 /*************************RESPONSIVENESS 393*******************************/
 @media screen and (max-width: 394px) {
-/*   .c-form {
+  /*   .c-form {
     height: 55rem;
   } */
 
@@ -974,7 +970,7 @@ ul {
     height: 11rem;
   }
 
-/*   .c-form {
+  /*   .c-form {
     height: 100vh;
   } */
 
