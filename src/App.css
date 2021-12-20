@@ -328,6 +328,9 @@ Nav ul li a {
 
 .portfo-card > div button a {
   text-decoration: none;
+  color: #00a2ff;
+  font-weight: 400;
+
 }
 
 .portfo-card img {
